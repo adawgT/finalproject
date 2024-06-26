@@ -1,5 +1,12 @@
 /* Custom Styles for BeReal Scavenger Hunt */
 
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
 /* Hero Section */
 .hero-section {
     background: url('images/hero-bg.jpg') no-repeat center center;
@@ -8,25 +15,40 @@
     position: relative;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: auto;
+.hero-content h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
 }
 
 /* Features Section */
 #features .card {
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #features .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#features .icon-wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    margin: auto;
 }
 
 #features .card img {
-    width: 50px;
-    margin: auto;
+    width: 40px;
 }
 
 /* Call to Action */
@@ -46,6 +68,43 @@
 
 /* Footer */
 footer {
-    background-color: #fff
+    background-color: #212529;
+    color: #adb5bd;
+}
 
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer h5 {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    #features .card img {
+        width: 30px;
+    }
 }
