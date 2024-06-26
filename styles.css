@@ -1,75 +1,46 @@
-/* Custom Styles for BeReal Scavenger Hunt */
-
-/* General */
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif; /* Default font */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
 }
 
-/* Hero Section */
-.hero-section {
-    background: url('images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+/* Section headings */
+h1, h2, h3 {
+    color: #555; /* Dark gray headings */
 }
 
-.hero-content h1 {
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.25rem;
-}
-
-/* Features Section */
-#features .card {
+/* Cards */
+.card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#features .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#features .icon-wrapper {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f9fa;
-    border-radius: 50%;
-    margin: auto;
+/* Navbar */
+.navbar {
+    background-color: #343a40 !important; /* Dark navbar background */
 }
 
-#features .card img {
-    width: 40px;
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* White navbar links */
 }
 
-/* Call to Action */
-#cta {
-    background-color: #28a745;
-    color: #fff;
-}
-
-#cta a.btn-light {
-    background-color: #fff;
-    color: #28a745;
-}
-
-#cta a.btn-light:hover {
-    background-color: #e9ecef;
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ccc; /* Light gray on hover */
 }
 
 /* Footer */
 footer {
     background-color: #212529;
     color: #adb5bd;
+    padding: 4rem 0;
 }
 
 footer a {
@@ -79,32 +50,4 @@ footer a {
 
 footer a:hover {
     color: #fff;
-}
-
-footer h5 {
-    margin-bottom: 1rem;
-}
-
-footer p {
-    margin-bottom: 0.5rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-section {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    #features .card img {
-        width: 30px;
-    }
 }
