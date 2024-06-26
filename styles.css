@@ -1,81 +1,51 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+/* Custom Styles for BeReal Scavenger Hunt */
+
+/* Hero Section */
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
+.hero-content {
+    max-width: 600px;
+    margin: auto;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Features Section */
+#features .card {
+    transition: transform 0.2s;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
+#features .card:hover {
+    transform: scale(1.05);
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+#features .card img {
+    width: 50px;
+    margin: auto;
 }
 
-h1, h2 {
-    color: #333;
+/* Call to Action */
+#cta {
+    background-color: #28a745;
+    color: #fff;
 }
 
-main {
-    padding: 20px;
+#cta a.btn-light {
+    background-color: #fff;
+    color: #28a745;
 }
 
-#features ul, #steps ol {
-    list-style: none;
-    padding: 0;
+#cta a.btn-light:hover {
+    background-color: #e9ecef;
 }
 
-#features ul li, #steps ol li {
-    background-color: #e7f5e7;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#features img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-.button {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: #45a049;
-}
-
+/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #fff
+
 }
