@@ -3,89 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works - BeReal Scavenger Hunt</title>
+    <title>How It Works | BeReal Scavenger Hunt</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-success text-white text-center py-4">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">BeReal Scavenger Hunt</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="details.html">How It Works</a>
-                        </li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BeReal Scavenger Hunt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="details.html">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#features">Features</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section class="text-center py-5">
+            <h1 class="mb-4">How It Works</h1>
+            <p class="lead mb-5">Discover the steps to participate in the BeReal Scavenger Hunt and embark on a thrilling adventure.</p>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="steps-section text-center py-5">
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="step-icon mb-3">
+                            <img src="images/step1.png" alt="Step 1: Sign Up" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Step 1: Sign Up</h5>
+                        <p class="card-text">Create an account and join the hunt. It’s quick and easy to get started.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="step-icon mb-3">
+                            <img src="images/step2.png" alt="Step 2: Get Tasks" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Step 2: Get Tasks</h5>
+                        <p class="card-text">Receive your first set of challenges and start exploring your city.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="step-icon mb-3">
+                            <img src="images/step3.png" alt="Step 3: Earn Rewards" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Step 3: Earn Rewards</h5>
+                        <p class="card-text">Complete tasks, earn points, and unlock exciting rewards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="details-section py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/details-1.jpg" alt="Join the Fun" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2>Join the Fun</h2>
+                    <p class="mt-3">The BeReal Scavenger Hunt is a unique way to experience your city. Whether you're a local or a visitor, you'll find hidden gems and new adventures around every corner.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Easy and fun challenges</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Discover new places</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Compete with friends</li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <h1 class="mt-3">How It Works</h1>
-    </header>
-
-    <main class="container my-5">
-        <section id="overview" class="mb-5">
-            <h2 class="mb-3">What is BeReal Scavenger Hunt?</h2>
-            <p>The BeReal Scavenger Hunt is a unique, interactive experience that combines the thrill of a scavenger hunt with the latest in augmented reality technology. Players receive real-time challenges and clues on their mobile devices, leading them on adventures through their city.</p>
         </section>
 
-        <section id="steps">
-            <h2 class="mb-4">How to Play</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">1. Download the App</h5>
-                            <p class="card-text">Get the BeReal Scavenger Hunt app on your phone.</p>
-                        </div>
-                    </div>
+        <section class="details-section py-5 bg-light">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="images/details-2.jpg" alt="Compete and Win" class="img-fluid rounded shadow">
                 </div>
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">2. Choose or Create a Hunt</h5>
-                            <p class="card-text">Pick an existing hunt or design your own adventure.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">3. Follow the Clues</h5>
-                            <p class="card-text">Solve challenges and find hidden treasures.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">4. Compete and Win</h5>
-                            <p class="card-text">Challenge friends and earn points to win rewards.</p>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                    <h2>Compete and Win</h2>
+                    <p class="mt-3">Challenge your friends, climb the leaderboard, and win amazing prizes. The more you play, the more you discover, and the more points you earn.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Real-time leaderboard</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Exciting rewards</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Endless fun</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="cta" class="text-center mt-5">
-            <h2>Get Started Now!</h2>
-            <p class="lead">Download the app and join the adventure. Your next big hunt awaits!</p>
-            <a href="#" class="btn btn-success btn-lg">Download Now</a>
+        <!-- Call to Action -->
+        <section id="cta" class="text-center py-5 bg-success text-white">
+            <h2>Ready to Start Your Adventure?</h2>
+            <p class="lead">Sign up today and dive into the BeReal Scavenger Hunt. Discover, explore, and win!</p>
+            <a href="index.html" class="btn btn-light btn-lg">Get Started</a>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 BeReal Scavenger Hunt. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>BeReal Scavenger Hunt</h5>
+                    <p>Transform your city into a playground.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="details.html" class="text-white">How It Works</a></li>
+                        <li><a href="index.html#features" class="text-white">Features</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@berealscavengerhunt.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2024 BeReal Scavenger Hunt. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JavaScript and dependencies -->
-    <script src="https://code.jquery.com/jquery-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
