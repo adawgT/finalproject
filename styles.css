@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif; /* Default font */
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #27B95C; /* Light gray background */
     color: #333; /* Dark text color */
 }
 
@@ -50,4 +50,12 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+/* Ensure consistent image sizes */
+img {
+    max-width: 100%; /* Prevent images from overflowing */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below images */
+    border-radius: 8px; /* Optional: Add rounded corners to images */
 }
