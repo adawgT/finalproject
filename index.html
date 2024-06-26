@@ -10,34 +10,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-success text-white text-center py-4">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">BeReal Scavenger Hunt</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="details.html">How It Works</a>
-                        </li>
-                    </ul>
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center py-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">BeReal Scavenger Hunt</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="details.html">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+            <div class="hero-content mt-5">
+                <h1 class="display-4">Embark on a Real-Life Adventure!</h1>
+                <p class="lead">Join the BeReal Scavenger Hunt and experience your city like never before.</p>
+                <a href="details.html" class="btn btn-primary btn-lg mt-4">Learn More</a>
             </div>
-        </nav>
-        <h1 class="mt-3">Experience Adventure Like Never Before!</h1>
+        </div>
     </header>
 
     <main class="container my-5">
-        <section id="features" class="text-center">
-            <h2 class="mb-4">Features</h2>
-            <div class="row">
+        <!-- Features Section -->
+        <section id="features" class="text-center py-5">
+            <h2 class="mb-4">Key Features</h2>
+            <div class="row g-4">
                 <div class="col-md-3">
-                    <div class="card shadow-sm">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/feature-icon1.png" class="card-img-top" alt="Interactive Gameplay">
                         <div class="card-body">
                             <h5 class="card-title">Interactive Gameplay</h5>
                             <p class="card-text">Engage in exciting real-world challenges.</p>
@@ -45,7 +57,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card shadow-sm">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/feature-icon2.png" class="card-img-top" alt="Real-time Challenges">
                         <div class="card-body">
                             <h5 class="card-title">Real-time Challenges</h5>
                             <p class="card-text">Receive updates and new tasks in real time.</p>
@@ -53,7 +66,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card shadow-sm">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/feature-icon3.png" class="card-img-top" alt="Explore Your City">
                         <div class="card-body">
                             <h5 class="card-title">Explore Your City</h5>
                             <p class="card-text">Discover new places and hidden gems.</p>
@@ -61,7 +75,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card shadow-sm">
+                    <div class="card border-0 shadow-sm">
+                        <img src="images/feature-icon4.png" class="card-img-top" alt="Compete with Friends">
                         <div class="card-body">
                             <h5 class="card-title">Compete with Friends</h5>
                             <p class="card-text">Challenge your friends and see who wins.</p>
@@ -69,27 +84,52 @@
                     </div>
                 </div>
             </div>
-            <img src="images/scavenger-hunt.jpg" class="img-fluid mt-5" alt="Scavenger hunt">
+            <img src="images/scavenger-hunt.jpg" class="img-fluid mt-5 rounded shadow" alt="Scavenger hunt">
         </section>
 
         <!-- Video Section -->
-        <section id="video" class="text-center mt-5">
-            <h2>Watch Our Demo Video</h2>
-            <div class="embed-responsive embed-responsive-16by9 mt-3">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <section id="video" class="text-center py-5 bg-light">
+            <div class="container">
+                <h2>Watch Our Demo Video</h2>
+                <div class="embed-responsive embed-responsive-16by9 mt-4">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3">See the BeReal Scavenger Hunt in action and get ready to join the fun!</p>
             </div>
-            <p class="mt-3">See the BeReal Scavenger Hunt in action and get ready to join the fun!</p>
         </section>
 
-        <section id="cta" class="text-center mt-5">
+        <!-- Call to Action -->
+        <section id="cta" class="text-center py-5 bg-success text-white">
             <h2>Join the Hunt!</h2>
             <p class="lead">Ready to embark on your next adventure? Sign up now and start hunting!</p>
-            <a href="details.html" class="btn btn-success btn-lg">Learn More</a>
+            <a href="details.html" class="btn btn-light btn-lg">Learn More</a>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 BeReal Scavenger Hunt. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>BeReal Scavenger Hunt</h5>
+                    <p>Transform your city into a playground.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="details.html" class="text-white">How It Works</a></li>
+                        <li><a href="#features" class="text-white">Features</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@berealscavengerhunt.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2024 BeReal Scavenger Hunt. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JavaScript and dependencies -->
