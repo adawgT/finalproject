@@ -65,7 +65,8 @@ h1, h2, h3 {
 footer {
     background-color: #212529;
     color: #adb5bd;
-    padding: 4rem 0;
+    padding: 2rem 0; /* Reduce the vertical padding to make the footer smaller */
+    text-align: center; /* Center-align the content */
 }
 
 footer a {
