@@ -26,7 +26,7 @@ h1, h2, h3 {
 /* Navbar */
 .navbar {
     background-color: #343a40 !important; /* Dark navbar background */
-    border-bottom: 3px solid #dc3545; /* Red border bottom */
+    border-bottom: 3px solid #006CFF; /* Blue border bottom */
 }
 
 .navbar-brand {
@@ -78,7 +78,7 @@ footer a:hover {
     color: #fff;
 }
 
-/* Ensure all images are 200x200 pixels */
+
 img {
     width: 200px;
     height: 200px;
